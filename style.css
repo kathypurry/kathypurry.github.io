@@ -1,0 +1,119 @@
+.section:not(:first-of-type){
+    display: none;
+}
+
+.skills{
+    display:none;
+}
+
+.skills.show{
+    display: block;
+}
+
+h1{
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    font-family: 'Fira Code', monospace;
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    font-family: 'Fira Code', monospace;
+}
+
+h2.home-header {
+    font-family: 'Fira Code', monospace;
+}
+
+.navbar ul{
+    display: flex;
+    font-family: 'Fira Code', monospace;
+    text-transform: uppercase;
+    justify-content: space-around;
+    list-style: none;
+    color: black;
+    cursor: pointer;
+}
+
+img{
+    filter: grayscale(100%);
+    height: 300px;
+}
+
+img:hover {
+    transition: 1s;
+    filter:initial;
+    box-shadow: 10px 10px 5px #ccc;
+}
+
+.asian-american {
+    list-style: none;
+}
+
+p.home-icon .fas {
+    font-size: 150px;
+    filter: opacity(50%);
+}
+
+p.home-icon .fas:hover {
+    transition: 1s;
+    filter: initial;
+}
+
+p.skills-icon .fab {
+    filter: opacity(50%);
+    display: grid;
+    font-size: 100px;
+}
+
+p.skills-icon .fab:hover {
+    transition: 1s;
+    filter: initial;
+}
+
+body {
+    display: grid;
+    background-color:white;
+}
+
+div {
+    text-align: center;
+    color: black;
+    font-family: 'Fira Code', monospace;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color:red;
+}
+
+.far {
+    font-size: 150px;
+    filter: opacity(50%);
+}
+
+.far:hover{
+    transition: 1s;
+    filter: initial;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+     display: grid;
+     text-align: center;
+     justify-content: center;
+     grid-gap: .25em;
+    }
+    .navbar ul{
+        display: grid;
+        text-align: center;
+        justify-content: space-evenly;
+        font-size: 12px;
+    }
+}
